@@ -1,0 +1,20 @@
+Установка:
+ВНИМАНИЕ! Установка модуля "Поваренок" только на версию Yii Advanced
+
+1. Скопируйте репозиторий или скачайте файлы модуля в папку @common/modules
+2. Установите модуль Select2 по ссылке https://github.com/kartik-v/yii2-widget-select2
+или установите с помощью Composer $ php composer.phar require kartik-v/yii2-widget-select2 "@dev"
+3. Вставьте в файл конфиг @frontend/config/main.php код
+    'modules' => [
+        'povarenok' => [
+            'class' => 'common\modules\povarenok\PovarenokModule',
+        ],
+    ],
+4. Установите 2 миграции, которые лежат в папке povarenok/migrations
+
+На этом установка завершена.
+!!! Адреса ссылок будут как указанные только при включенных "urlManager" !!!
+Пользовательская часть: Ссылка suite.ru/povarenok/povarenok
+Редактирование ингредиентов(Только для залогиненых пользователей): Ссылка suite.ru/povarenok/ingredients
+Редактирование блюд(Только для залогиненых пользователей): Ссылка suite.ru/povarenok/dishes
+	
